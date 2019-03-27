@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tbl_grades" layoutX="181.0" layoutY="117.0" prefHeight="322.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="col_SID" prefWidth="75.0" text="SID" />
+          <TableColumn fx:id="col_midterms" prefWidth="130.0" text="Midterms" />
+            <TableColumn fx:id="col_finals" prefWidth="132.0" text="Finals" />
+            <TableColumn fx:id="col_assignments" prefWidth="234.0" text="Assignments" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="172.0" layoutY="569.0" mnemonicParsing="false" text="Add" />
+      <Label layoutX="181.0" layoutY="461.0" text="SID:" />
+      <Label layoutX="488.0" layoutY="461.0" text="Assignments" />
+      <Label layoutX="179.0" layoutY="502.0" text="Midterm:" />
+      <Label layoutX="492.0" layoutY="502.0" text="Final Exam:" />
+      <TextField fx:id="txtSID" layoutX="216.0" layoutY="456.0" promptText="SID" />
+      <TextField fx:id="txtMidterm" layoutX="244.0" layoutY="497.0" promptText="Midterm" />
+      <TextField fx:id="txtAssignment" layoutX="595.0" layoutY="456.0" promptText="Assignments" />
+      <TextField fx:id="txtFinal" layoutX="595.0" layoutY="497.0" promptText="Final Exam" />
+      <MenuBar layoutY="-1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As" />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
